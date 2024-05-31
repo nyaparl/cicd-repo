@@ -15,6 +15,6 @@ phases:
            
   post_build:
     commands:
-      - echo "Deployment complete !!!!!!!!"
+      - echo "   Deployment complete !!!!!!!!    "
       - aws s3 cp modules.zip s3://my-bucket-2024-05-31-new
       
