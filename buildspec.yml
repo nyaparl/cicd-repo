@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.12
+    commands:
+      - echo "Nothing to install ....."
+
+  build:
+    commands:
+      - Nothing to build ...."
+      - echo $pwd
+           
+  post_build:
+    commands:
+      - echo "Deployment complete !!!!!!!!"
