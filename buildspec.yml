@@ -10,8 +10,9 @@ phases:
     commands:
       - echo " Nothing to build ...."
       - echo $CODEBUILD_SRC_DIR
-      - ls
+      - zip -r modules.zip /modules
            
   post_build:
     commands:
       - echo "Deployment complete !!!!!!!!"
+      - aws s3 cp modules.zip s3://my-bucket-2024-05-31-new/
