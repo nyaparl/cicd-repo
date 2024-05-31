@@ -9,7 +9,7 @@ phases:
   build:
     commands:
       - Nothing to build ...."
-      - echo $pwd
+      - echo $CODEBUILD_SRC_DIR
            
   post_build:
     commands:
