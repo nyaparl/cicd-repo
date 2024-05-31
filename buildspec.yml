@@ -8,7 +8,7 @@ phases:
 
   build:
     commands:
-      - Nothing to build ...."
+      - echo " Nothing to build ...."
       - echo $CODEBUILD_SRC_DIR
            
   post_build:
